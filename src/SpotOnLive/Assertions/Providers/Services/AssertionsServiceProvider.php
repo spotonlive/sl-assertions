@@ -14,7 +14,7 @@ use Illuminate\Foundation\Application;
 use SpotOnLive\Assertions\Exceptions\IllegalConfigurationException;
 use SpotOnLive\Assertions\Services\AssertionService;
 
-class AssertionsServiceProvider extends ServiceProvider
+class AssertionServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -28,7 +28,7 @@ class AssertionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('SpotOnLive\Assertions\Services\AssertionsService', function(Application $app) {
+        $this->app->bind('SpotOnLive\Assertions\Services\AssertionService', function(Application $app) {
             $assertionsConfig = config('assertions');
             $assertions = [];
 
@@ -43,7 +43,7 @@ class AssertionsServiceProvider extends ServiceProvider
             return new AssertionService($assertions);
         });
 
-        $this->app->alias('SpotOnLive\Assertions\Services\AssertionsService', 'AssertionService');
+        $this->app->alias('SpotOnLive\Assertions\Services\AssertionService', 'AssertionService');
 
         $this->mergeConfig();
     }

@@ -41,7 +41,7 @@ class AssertionService implements AssertionServiceInterface
         $assertionClass = $this->assertions[$name];
 
         if (!class_exists($assertionClass)) {
-            throw new AssertionNotFoundException(_('The assertion class \'%s\' does not exist'), $assertionClass);
+            throw new AssertionNotFoundException(sprintf(_('The assertion class \'%s\' does not exist'), $assertionClass));
         }
 
         /** @var \SpotOnLive\Assertions\AssertionInterface $assertion */
