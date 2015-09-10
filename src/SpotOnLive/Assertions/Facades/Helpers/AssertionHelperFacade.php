@@ -1,6 +1,6 @@
 <?php
 
-namespace SpotOnLive\Assertions\Facades\Helper;
+namespace SpotOnLive\Assertions\Facades\Helpers;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -20,7 +20,7 @@ Run `$ composer require spotonlive/sl-assertions`
 
     'aliases' => [
         (..)
-        'AssertionHelper' => 'SpotOnLive\Assertions\Facades\AssertionHelperFacade'
+        'AssertionHelper' => 'SpotOnLive\Assertions\Facades\Helpers\AssertionHelperFacade'
         (..)
     ]
 ```
