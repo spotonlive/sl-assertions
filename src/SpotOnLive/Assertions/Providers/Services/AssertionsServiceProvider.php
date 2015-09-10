@@ -19,7 +19,7 @@ class AssertionsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../../../config/config.php' => config_path('assertions.php'),
+            __DIR__ . '/../../../../config/config.php' => config_path('assertions.php'),
         ]);
     }
 
@@ -51,7 +51,7 @@ class AssertionsServiceProvider extends ServiceProvider
     private function mergeConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/config.php', 'assertions'
+            __DIR__ . '/../../../../config/config.php', 'assertions'
         );
     }
 }
