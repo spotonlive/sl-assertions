@@ -12,6 +12,7 @@ namespace SpotOnLive\Assertions\Providers\Services;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Foundation\Application;
 use SpotOnLive\Assertions\Exceptions\IllegalConfigurationException;
+use SpotOnLive\Assertions\Services\AssertionService;
 
 class AssertionsServiceProvider extends ServiceProvider
 {
@@ -39,7 +40,7 @@ class AssertionsServiceProvider extends ServiceProvider
                 $assertions = $assertionsConfig['assertions'];
             }
 
-            return new Services\AssertionService($assertions);
+            return new AssertionService($assertions);
         });
 
         $this->app->alias('SpotOnLive\Assertions\Services\AssertionsService', 'slassertions');
