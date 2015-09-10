@@ -10,7 +10,7 @@
 namespace SpotOnLive\Assertions\Providers\Services;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Foundation\Application;
 use SpotOnLive\Assertions\Exceptions\IllegalConfigurationException;
 use SpotOnLive\Assertions\Services\AssertionService;
 

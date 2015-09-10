@@ -10,7 +10,7 @@
 namespace SpotOnLive\Assertions\Providers\Helpers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Foundation\Application;
 use SpotOnLive\Assertions\Helpers\AssertionHelper;
 
 class AssertionHelperProvider extends ServiceProvider
