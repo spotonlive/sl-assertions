@@ -43,7 +43,7 @@ class AssertionsServiceProvider extends ServiceProvider
             return new AssertionService($assertions);
         });
 
-        $this->app->alias('SpotOnLive\Assertions\Services\AssertionsService', 'slassertions');
+        $this->app->alias('SpotOnLive\Assertions\Services\AssertionsService', 'AssertionService');
 
         $this->mergeConfig();
     }
