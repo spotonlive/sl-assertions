@@ -78,7 +78,9 @@ return [
 ## Usage
 
 ### Service
-Use the assertion service by injecting `SpotOnLive\Assertions\Services\AssertionService`.
+Use the assertion service by injecting `AssertionService`.
+
+`app::make('AssertionService')`
 
 *Example:*
 ```php
@@ -107,6 +109,18 @@ class Controller
         return view('admin.page');
     }
 }
+```
+
+### Helper
+
+Use the `AssertionHelper` directly in your views.
+
+*Example:*
+**view.blade.php**
+```php
+@if(AssertionHelper::isGranted('user.edit', Auth::user(), ['user' => $user]))
+    <a href="{{URL::route('user.edit')}}">{{_('Edit user')}}</a>
+@endif
 ```
 
 ## Organization & authors
