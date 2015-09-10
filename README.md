@@ -27,7 +27,7 @@ Run `$ composer require spotonlive/sl-assertions`
 
 ### Configuration
 run `$ php artisan vendor:publish` to create the configuration file.
-A configuration file is now available in `config/assertion.php`.
+A configuration file is now available in `config/assertions.php`.
 
 ## Assertions
 To create new examples create a new assertion file implementing the assertion interface.
@@ -65,7 +65,7 @@ class EditAssertion implements AssertionInterface
 
 And then register the assertion in your configuration file:
 
-`config/assertion.php`
+`config/assertions.php`
 ````php
 <?php
 
