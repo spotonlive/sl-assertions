@@ -14,13 +14,14 @@ Run `$ composer require spotonlive/sl-assertions`
 ````php
     'providers' => [
         (..)
-        'SpotOnLive\Assertions\Providers\Services\AssertionsServiceProvider'
+        'SpotOnLive\Assertions\Providers\Services\AssertionsServiceProvider',
+        'SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider',
         (..)
     ]
 
     'aliases' => [
         (..)
-        'AssertionHelper' => 'SpotOnLive\Assertions\Facades\Helpers\AssertionHelperFacade'
+        'AssertionHelper' => 'SpotOnLive\Assertions\Facades\Helpers\AssertionHelperFacade',
         (..)
     ]
 ```
