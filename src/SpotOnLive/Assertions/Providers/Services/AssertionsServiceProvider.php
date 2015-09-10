@@ -29,7 +29,7 @@ class AssertionsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('SpotOnLive\Assertions\Services\AssertionsService', function(Application $app) {
-            $assertionsConfig = config('assertion');
+            $assertionsConfig = config('assertions');
             $assertions = [];
 
             if (isset($assertionsConfig['assertions'])) {
