@@ -1,0 +1,32 @@
+{
+  "name": "spotonlive/sl-assertions",
+  "type": "library",
+  "description": "Assertions for Laravel 5.1",
+  "keywords": [
+    "assertions",
+    "authorization",
+    "laravel"
+  ],
+  "homepage": "https://github.com/spotonlive/sl-assertions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nikolaj Petersen",
+      "email": "nikolaj.lovenhardt@gmail.com",
+      "homepage": "http://spotonmarketing.dk"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpotOnLive\\EntrustDoctrineORM\\": "src/SpotOnLive/Assertions/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
