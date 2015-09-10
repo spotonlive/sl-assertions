@@ -1,5 +1,7 @@
 # Assertions for Laravel 5.1
 
+[![Latest Stable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/stable)](https://packagist.org/packages/spotonlive/sl-assertions) [![Total Downloads](https://poser.pugx.org/spotonlive/sl-assertions/downloads)](https://packagist.org/packages/spotonlive/sl-assertions) [![Latest Unstable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/unstable)](https://packagist.org/packages/spotonlive/sl-assertions) [![License](https://poser.pugx.org/spotonlive/sl-assertions/license)](https://packagist.org/packages/spotonlive/sl-assertions)
+
 **THIS PACKAGE IS UNDER DEVELOPMENT**
 
 ## Configuration
