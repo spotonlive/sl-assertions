@@ -13,6 +13,7 @@ class AssertionHelperFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
+        $helper = new SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider;
         return 'SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider';
     }
 }

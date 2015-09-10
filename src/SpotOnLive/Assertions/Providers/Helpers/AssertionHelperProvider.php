@@ -13,7 +13,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Foundation\Application;
 use SpotOnLive\Assertions\Helpers\AssertionHelper;
 
-class AssertionsHelperProvider extends ServiceProvider
+class AssertionHelperProvider extends ServiceProvider
 {
     /**
      * Register assertions
