@@ -59,7 +59,7 @@ class EditAssertion implements AssertionInterface
         return false;
     }
 }
-``
+```
 
 And then register the assertion in your configuration file:
 
@@ -104,7 +104,7 @@ class Controller
         return view('admin.page');
     }
 }
-```
+``
 
 ## Organization & authors
 * [**spotonlive**](https://github.com/spotonlive)
