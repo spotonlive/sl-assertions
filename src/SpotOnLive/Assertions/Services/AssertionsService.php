@@ -47,6 +47,6 @@ class AssertionService implements AssertionServiceInterface
         /** @var \SpotOnLive\Assertions\AssertionInterface $assertion */
         $assertion = new $assertionClass;
 
-        return $assertion->assert($name, $user, $data);
+        return $assertion->assert($user, $data);
     }
 }
