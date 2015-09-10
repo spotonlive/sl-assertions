@@ -104,7 +104,7 @@ class Controller
         return view('admin.page');
     }
 }
-``
+```
 
 ## Organization & authors
 * [**spotonlive**](https://github.com/spotonlive)
