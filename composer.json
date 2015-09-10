@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SpotOnLive\\EntrustDoctrineORM\\": "src/SpotOnLive/Assertions/"
+      "SpotOnLive\\Assertions\\": "src/SpotOnLive/Assertions/"
     }
   },
   "minimum-stability": "dev",
