@@ -20,7 +20,7 @@ class AssertionHelperProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider', function(Application $application) {
+        $this->app->bind('SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider', function (Application $application) {
             /** @var \SpotOnLive\Assertions\Services\AssertionService $assertionService */
             $assertionService = $application->make('AssertionService');
 

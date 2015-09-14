@@ -28,7 +28,7 @@ class AssertionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('SpotOnLive\Assertions\Services\AssertionService', function(Application $app) {
+        $this->app->bind('SpotOnLive\Assertions\Services\AssertionService', function (Application $app) {
             $assertionsConfig = config('assertions');
             $assertions = [];
 
@@ -51,7 +51,8 @@ class AssertionServiceProvider extends ServiceProvider
     private function mergeConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../../../../config/config.php', 'assertions'
+            __DIR__ . '/../../../../config/config.php',
+            'assertions'
         );
     }
 }
