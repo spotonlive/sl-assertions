@@ -1,6 +1,6 @@
 # Assertions for Laravel 5.1
 
-[![Latest Stable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/stable)](https://packagist.org/packages/spotonlive/sl-assertions) [![Total Downloads](https://poser.pugx.org/spotonlive/sl-assertions/downloads)](https://packagist.org/packages/spotonlive/sl-assertions) [![Latest Unstable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/unstable)](https://packagist.org/packages/spotonlive/sl-assertions) [![License](https://poser.pugx.org/spotonlive/sl-assertions/license)](https://packagist.org/packages/spotonlive/sl-assertions)
+[![Latest Stable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/stable)](https://packagist.org/packages/spotonlive/sl-assertions) [![Total Downloads](https://poser.pugx.org/spotonlive/sl-assertions/downloads)](https://packagist.org/packages/spotonlive/sl-assertions) [![Latest Unstable Version](https://poser.pugx.org/spotonlive/sl-assertions/v/unstable)](https://packagist.org/packages/spotonlive/sl-assertions) [![License](https://poser.pugx.org/spotonlive/sl-assertions/license)](https://packagist.org/packages/spotonlive/sl-assertions) [![Code Climate](https://codeclimate.com/github/spotonlive/sl-assertions/badges/gpa.svg)](https://codeclimate.com/github/spotonlive/sl-assertions) [![Test Coverage](https://codeclimate.com/github/spotonlive/sl-assertions/badges/coverage.svg)](https://codeclimate.com/github/spotonlive/sl-assertions/coverage)
 
 **THIS PACKAGE IS UNDER DEVELOPMENT**
 
