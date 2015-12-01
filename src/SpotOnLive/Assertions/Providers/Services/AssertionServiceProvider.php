@@ -16,6 +16,9 @@ use SpotOnLive\Assertions\Services\AssertionService;
 
 class AssertionServiceProvider extends ServiceProvider
 {
+    /**
+     * Boot
+     */
     public function boot()
     {
         $this->publishes([
@@ -28,7 +31,7 @@ class AssertionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('SpotOnLive\Assertions\Services\AssertionService', function (Application $app) {
+        $this->app->bind(\SpotOnLive\Assertions\Services\AssertionService::class, function () {
             $assertionsConfig = config('assertions');
             $assertions = [];
 
@@ -43,11 +46,17 @@ class AssertionServiceProvider extends ServiceProvider
             return new AssertionService($assertions);
         });
 
-        $this->app->alias('SpotOnLive\Assertions\Services\AssertionService', 'AssertionService');
+        $this->app->alias(
+            'SpotOnLive\Assertions\Services\AssertionService',
+            'AssertionService'
+        );
 
         $this->mergeConfig();
     }
 
+    /**
+     * Merge config
+     */
     private function mergeConfig()
     {
         $this->mergeConfigFrom(

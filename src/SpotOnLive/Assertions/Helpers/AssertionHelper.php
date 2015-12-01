@@ -17,8 +17,8 @@ class AssertionHelper
     /**
      * Check if action is granted
      *
-     * @param $name
-     * @param $user
+     * @param string $name
+     * @param mixed $user
      * @param array $data
      * @return bool
      */

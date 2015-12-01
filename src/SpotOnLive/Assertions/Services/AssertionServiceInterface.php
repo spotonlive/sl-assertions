@@ -14,9 +14,9 @@ use SpotOnLive\Assertions\Exceptions\AssertionNotFoundException;
 interface AssertionServiceInterface
 {
     /**
-     * Check if action is granted
+     * Check if permission is granted
      *
-     * @param $name
+     * @param string $name
      * @param $user
      * @param array $data
      * @return bool

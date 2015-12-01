@@ -24,9 +24,9 @@ class AssertionService implements AssertionServiceInterface
     }
 
     /**
-     * Check if permissions is granted
+     * Check if the permission is granted
      *
-     * @param $name
+     * @param string $name
      * @param $user
      * @param array $data
      * @return bool
@@ -35,13 +35,23 @@ class AssertionService implements AssertionServiceInterface
     public function isGranted($name, $user, array $data = [])
     {
         if (!array_key_exists($name, $this->assertions)) {
-            throw new AssertionNotFoundException(sprintf(_('The assertion \'%s\' does not exist'), $name));
+            throw new AssertionNotFoundException(
+                sprintf(
+                    _('The assertion \'%s\' does not exist'),
+                    $name
+                )
+            );
         }
 
         $assertionClass = $this->assertions[$name];
 
         if (!class_exists($assertionClass)) {
-            throw new AssertionNotFoundException(sprintf(_('The assertion class \'%s\' does not exist'), $assertionClass));
+            throw new AssertionNotFoundException(
+                sprintf(
+                    _('The assertion class \'%s\' does not exist'),
+                    $assertionClass
+                )
+            );
         }
 
         /** @var \SpotOnLive\Assertions\AssertionInterface $assertion */

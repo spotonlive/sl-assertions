@@ -13,16 +13,12 @@ Run `$ composer require spotonlive/sl-assertions`
 *Insert the provider and helper alias into your application configuration*
 ````php
     'providers' => [
-        (..)
-        'SpotOnLive\Assertions\Providers\Services\AssertionServiceProvider',
-        'SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider',
-        (..)
+        \SpotOnLive\Assertions\Providers\Services\AssertionServiceProvider::class,
+        \SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider::class,
     ]
 
     'aliases' => [
-        (..)
-        'AssertionHelper' => 'SpotOnLive\Assertions\Facades\Helpers\AssertionHelperFacade',
-        (..)
+        'AssertionHelper' => \SpotOnLive\Assertions\Facades\Helpers\AssertionHelperFacade::class,
     ]
 ```
 
@@ -71,7 +67,7 @@ And then register the assertion in your configuration file:
 <?php
 
 return [
-    'users.edit' => 'App\Assertions\Users\EditAssertion'
+    'users.edit' => \App\Assertions\Users\EditAssertion::class
 ];
 ```
 
@@ -125,4 +121,4 @@ Use the `AssertionHelper` directly in your views.
 
 ## Organization & authors
 * [**spotonlive**](https://github.com/spotonlive)
-* [**nikolajpetersen**](https://github.com/Nikolajpetersen)
+* [**nikolajlovenhardt**](https://github.com/nikolajlovenhardt)
