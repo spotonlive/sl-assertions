@@ -67,7 +67,7 @@ And then register the assertion in your configuration file:
 <?php
 
 return [
-    'users.edit' => \App\Assertions\Users\EditAssertion::class
+    'users.edit' => \App\Assertions\Users\EditAssertion::class,
 ];
 ```
 
