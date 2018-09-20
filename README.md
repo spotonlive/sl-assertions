@@ -64,7 +64,7 @@ class EditAssertion implements AssertionInterface
 And then register the assertion in your configuration file:
 
 `config/assertions.php`
-````php
+```php
 <?php
 
 return [
