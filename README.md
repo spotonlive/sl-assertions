@@ -11,7 +11,8 @@ Run `$ composer require spotonlive/sl-assertions`
 
 `config/app.php`
 *Insert the provider and helper alias into your application configuration*
-````php
+
+```php
     'providers' => [
         \SpotOnLive\Assertions\Providers\Services\AssertionServiceProvider::class,
         \SpotOnLive\Assertions\Providers\Helpers\AssertionHelperProvider::class,
