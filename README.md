@@ -52,11 +52,7 @@ class EditAssertion implements AssertionInterface
         /** @var User $userToEdit */
         $userToEdit = $data['user'];
 
-        if ($user == $userToEdit || $user->hasRole(['superadmin', 'admin'])) {
-            return true;
-        }
-
-        return false;
+        return $user == $userToEdit || $user->hasRole(['superadmin', 'admin']);
     }
 }
 ```
